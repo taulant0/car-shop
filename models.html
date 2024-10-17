@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Car Shop App</title>
+<link rel="stylesheet" href="css/fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/all.css">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="models.css">
+
+</head>
+
+
+
+<body>
+    
+    </nav>
+    <div id="header-placeholder"></div>
+    <main>
+
+
+
+        <div class="menu-div" > 
+            <div class="image-center">
+            <img id="menu-image" src="photos/models1.jpeg" alt="Menu Photo"></div>
+            
+            
+            <div id="filter-buttons">
+                <button id="filter-button" onclick="toggleCategoryButtons()">Filter</button>
+                <div id="category-buttons" style="display: none;">
+                    <button id="all-button" onclick="updateCarItems('all')">All</button>
+                    <button id="e-tron-button" onclick="updateCarItems('etron')">E-tron</button>
+                    <button id="q8-button" onclick="updateCarItems('Q8')">Q8</button>
+                    <button id="a5-button" onclick="updateCarItems('A5')">A5</button>
+                    <button id="a6-button" onclick="updateCarItems('A6')">A6</button>
+                    <button id="a7-button" onclick="updateCarItems('A7')">A7</button>
+                    <button id="a8-button" onclick="updateCarItems('A8')">A8</button>
+                    <button id="q3-button" onclick="updateCarItems('Q3')">Q3</button>
+                    <button id="q5-button" onclick="updateCarItems('Q5')">Q5</button>
+                    <button id="q7-button" onclick="updateCarItems('Q7')">Q7</button>
+                    <button id="r8-button" onclick="updateCarItems('R8')">R8</button>
+                    <button id="tt-button" onclick="updateCarItems('TT')">TT</button>
+                   
+           
+                    
+                </div>
+            </div>
+ 
+
+            <label class="filterbyname" for="search">Filter by name:</label>
+            <input type="text" id="search" placeholder="Search your Audi">
+          
+            <label class="filterbyprice" for="price-filter">Filter by price:</label>
+            <input type="number" id="price-filter-min" placeholder="Min">
+            <input type="number" id="price-filter-max" placeholder="Max">
+
+
+
+            <ul id="car-items"></ul>
+
+
+          
+        
+            <div class="cart">
+                <h2>Add to Cart</h2>
+                <ul id="basket-items"></ul>
+          
+                <p>Subtotal: <span id="subtotal-price">0.00</span></p> 
+                <p>Tax (18%): <span id="tax-price">0.00</span></p> 
+                <p>Total: <span id="totali-price">0.00</span></p>
+                <button id="checkout"><a href="payment.html">Pay</a></button>
+            </div>
+
+
+
+            
+
+        
+    <section id="add-car">
+        <h2>Add a new car in the Models section</h2>
+        <form id="car-form">
+            <label for="make-input">Type:</label>
+            <input type="text" id="make-input" required>
+            <label for="model-input">Model:</label>
+            <input type="text" id="model-input" required>
+            <label for="price-input">Price:</label>
+            <input type="number" id="price-input" required>
+            <label for="image-input">Image:</label>
+             <input type="file" id="image-input" accept="image/*" required>
+             <button type="submit">Add Car</button>
+        </form>
+        
+    </section>
+
+ 
+
+
+        
+        </div>
+
+
+
+        
+     
+    </main>
+
+  
+
+ 
+
+
+
+
+
+
+
+</body>
+<div id="footer-placeholder"></div>
+
+
+
+
+
+    <link rel="stylesheet" href="templates/footer-template.css">
+    
+   
+
+
+
+    <script src="models.js"></script>
+    <script src="templates.js"></script>
+    <script src="ajax.js"></script>
+
+
+</html>
