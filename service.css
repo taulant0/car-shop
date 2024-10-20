@@ -1,126 +1,11 @@
-header{
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0 0 4px 6px rgba(0,0,0,0.1);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    height: 80px;
-}
-nav{
-    display:flex ;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo{
-    display: flex;
-}
-.logo img{
-    height: 80px;
-    width: 110px;
-    margin-bottom: 20px;
-   
-}
-
-.nav-links ul{
-    list-style: none;
-    display: flex;
-    margin-top: 23px;
-    justify-content:flex-start;
- 
-}
-
-.nav-links li{
-   margin: 10px 10px;
-
-}
-.nav-links a{
-    margin-top: 0;
-    text-decoration: none;
-    color: #000000;
-    font-weight: 700;
-    text-transform: uppercase;
-    transition: color 0.3s ease;
-}
-
-.nav-links a:hover{
-color: #9f9f9f;
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 
-.car{
-    display:none;
-}
-@media screen and (max-width:768px){
-    .nav-links{
-        position: absolute;
-        background-color: white;
-        height: 100%;
-        top: 0;
-        right: 0;
-        width: 200px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        transition: transform 0.3s ease;
-        z-index: 999;
-        transform: translateX(200px);
-
-
-    }
-    .nav-links ul{
-flex-direction: column;
-    }
-    .nav-links li {
-        margin: 10px 0;
-    }
-    .car
-    {
-        display: block;
-        cursor: pointer;
-    }
-.line1, .line2, .line3
-{
-  
-width: 30px;
-height: 3px;
-background-color: black;
-margin: 5px;
-transition: all 0.5s ease; 
-position: relative;
-
-
-}
-.nav-active {
-transform: translateX(0);
-
-
-
-}
-
-.line1{ 
-    margin-left: 300px;
-top: 50px;
-position:absolute;
-transform: rotate(-45deg) ;
-
-
-}
-
-.line2{
-    margin-left: 300px;
-opacity: 0;
-}
-.line3
-{
-    margin-left: 300px;
-top: 50px;
-position:absolute;
-transform: rotate(45deg) ;
-}}
 
 
 
@@ -375,11 +260,12 @@ color: #34c209;
   text-align: justify;
   width: 90%;
   max-width: 100%;
+  font-size: 20px;
   
 }
 .service-text p:nth-child(1){
   margin-top: 40px;
-  margin-left: 100px;
+  margin-left: 140px;
   }
   .service-text p:nth-child(2){
     margin-top: -30px;
@@ -412,17 +298,30 @@ transform: scale(1);
 
         .contact-form form{ 
           
-            width: 82.5%;
+          
             max-width: 100%;
         margin: 0;
         }
 
 
 
+        .service-text p:nth-child(1){
+            font-size: 40px;
+        }
+        .service-text p:nth-child(2), .service-text p:nth-child(3), .service-text p:nth-child(4), .service-text p:nth-child(5)
+        {
+            font-size: 20px;
+        }
 
 
+        .rotated-square img{
+            transform: scale(0.8);
+            margin-top: -40px;
+        }
 
-
+        .contact-form{
+            margin-top: 0;
+        }
 
 }
 
